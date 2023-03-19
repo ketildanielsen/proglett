@@ -1,0 +1,23 @@
+En regneenhet (prosessor) gjør vanligvis bare 1 operasjon av gangen.
+Du må vite i hvilken rekkefølge operasjonene gjøres.
+Hovedregel er fra venstre mot høyre, og innerste parantes først.
+
+2+3+4 utføres 2+3=5, så 5+4=9 (fra venstre mot høyre).
+
+2+(3+4) utføres 3+4=7 og 2+7=9 (innerste parantes først).
+
+Øvelse.  Sjekk at resultatet blir slik i Python.  Sjekk så at 
+det blir likt i Javascript.
+
+Gjenta kjøring ved å bruke pil opp eller ned.  Resultatet blir alltid likt.
+
+Blanke foran, inni og etter uttrykket ignoreres.  Prøv å legg inn blanke.  Resultatet skal bli likens.
+
+Den tar kun tall som operander. Skriver du "l" i stedet for "1" får du feil i uttrykket l+1.  
+Skriver du "O" i stedet for "0" blir det likens. Visuelt sett er disse ganske like. 
+
+Parantesene må være balanserte.  Sjekk feilmeldingene fra Python og Javascript.
+
+2*(3+4) gir noe annet enn (2*3)+4.  Forklaring får du ved å sette opp rekkefølgen og simulere en kjøring.
+
+
