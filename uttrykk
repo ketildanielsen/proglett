@@ -2,9 +2,19 @@ En regneenhet (prosessor) gjør vanligvis bare 1 operasjon av gangen.
 Du må vite i hvilken rekkefølge operasjonene gjøres.
 Hovedregel er fra venstre mot høyre, og innerste parantes først.
 
-2+3+4 utføres 2+3=5, så 5+4=9 (fra venstre mot høyre).
+# addisjon
+
+2+3 er en operasjon med to operander (2 og 3) og en operator (+).
+
+Hvert ekstra ledd gir en ekstra operasjon.  Å summere tre tall gir 2 operasjoner.
+2+3+4 vil først utføre 2+3=5, så 5+4=9 (fra venstre mot høyre). 
 
 2+(3+4) utføres 3+4=7 og 2+7=9 (innerste parantes først).
+Resultatet blir det samme om en skriver (2+3)+4.
+
+Negative tall skrives med minustegn foran.
+-3+2.5 gir -0.5.
+To negative blir pluss, så 2--3 gir 2+3 som er 5.
 
 Øvelse.  Sjekk at resultatet blir slik i Python.  Sjekk så at 
 det blir likt i Javascript.
@@ -13,11 +23,38 @@ Gjenta kjøring ved å bruke pil opp eller ned.  Resultatet blir alltid likt.
 
 Blanke foran, inni og etter uttrykket ignoreres.  Prøv å legg inn blanke.  Resultatet skal bli likens.
 
-Den tar kun tall som operander. Skriver du "l" i stedet for "1" får du feil i uttrykket l+1.  
+Den tar kun tall som operander. 
+Hvis du skal addere 1 og 2 og skriver du "l" i stedet for "1" får du feil i uttrykket l+2.  
 Skriver du "O" i stedet for "0" blir det likens. Visuelt sett er disse ganske like. 
 
 Parantesene må være balanserte.  Sjekk feilmeldingene fra Python og Javascript.
 
+# multiplikasjon
+
+Deling (divisjon) og ganging (multiplikasjon) har lik prioritet og har høyere presedens enn summering (pluss og minus).
+
+
 2*(3+4) gir noe annet enn (2*3)+4.  Forklaring får du ved å sette opp rekkefølgen og simulere en kjøring.
 
 
+# gjennomsnitt
+
+Et aritmetisk gjennomsnitt er summen delt på antallet.
+Det bør skrives slik: (1 + 3 - 7.5) / 3 fordi det gir færrest operasjoner (3 pluss og 1 deling = 4).
+Det kan også skrives 1/3 + 3/3 + 7.5/3, men da gjentas delingen, så vi trenger 6 operasjoner.
+
+En skal forsøke å skrive program som gir færrest mulig operasjoner.
+
+# skatteberegning
+
+En 30 % skatt av en inntekt på 400 000 skrives som 400000*0.3.
+Nettoinntekten skrives da som brutto minus skatt, altså 400000-400000*0.3.
+Dette er 2 operasjoner, der multiplikasjon utføres først, deretter subtraksjon.
+Det kan skrives som 1 operasjon:  Netto inntekt er 400000*0.7.
+
+Hvis man i tillegg har formue på 5 millioner som skal beskattes 1 % blir total skatt
+400000*0.3 + 5000000*0.01.
+Dette gir 3 operasjoner, der den først utfører de to multiplikasjonene, før den adderer.
+
+For å unngå å skrive feil kan det skrives som 1000000*(0.4*0.3 + 5*0.01).  
+Det koster en ekstra operasjon, men minsker kanskje sjansen for feil.
