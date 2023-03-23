@@ -102,7 +102,29 @@ i kodeprosjekt, og vente på at OpenAI tar i bruk disse.  Resultatet kan skape s
 
 ## ansvar ved bruk
 
-Hvis man bruker dårlig kode fra OpenAI, er spørsmålet også om OpenAI stiller seg rettslig
+Hvis man tar i bruk dårlig kode fra OpenAI, er spørsmålet også om OpenAI stiller seg rettslig
 ansvarlig.  Det gjør de neppe.
+
+
+# Forskjellig bruk av en AI
+
+## lage kode
+
+## sammenligning 
+
+Det er som regel flere måter å lage et program som løser et gitt problem.
+Man kan sammenligne kode man selv eller andre har laget, med den AI-en laget.  
+Vil en tredjepart kunne si hva som er laget av et menneske og hva som er laget av en maskin?
+Dette er relatert til Turing-testen.
+
+
+## oversetting
+
+Codex kan oversette fra ett språk til et annet, som fra Python til Perl.
+
+
+## forklaring
+
+Codex kan forklare et program.
 
 
