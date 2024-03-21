@@ -1,0 +1,6 @@
+check50:
+  checks:
+    heisan:
+     - run: python3 heisan.py
+       stdout: Heisan
+       exit: 0
